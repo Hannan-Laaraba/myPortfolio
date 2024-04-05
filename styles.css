@@ -358,9 +358,33 @@ span{
     background-color: var(--second-bg-color);
     padding: 5rem 0 1rem;
 }
-.projects .heading h2{
-    color:var(--main-color);
-    font-size: 20px;
+.projects .heading{
+    color: var(--main-color);
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.card img {
+    width: 30%;
+    height: 30%;
+}
+.projects .container .rows {
+    grid-template-columns: repeat(3, 1fr);
+}
+.card img:hover{
+
+}
+
+
+.card .text {
+    padding: 20px;
+    color: var(--main-color);
+}
+.card .text h2 {
+    margin-top: 0;
+}
+.card .text p {
+    margin-bottom: 0;
 }
 
 
