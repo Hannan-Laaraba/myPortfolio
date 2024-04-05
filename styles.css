@@ -61,10 +61,6 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
     transition: 0.5s ease;
 }
-.skills .heading h2{
-    color: #fff;
-}
-
 .logo:hover{
     transform: scale(1.1);
 }
@@ -132,8 +128,8 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background: #aa96c4;
-    color: black;
+    background: var(--second-bg-color);
+    color: rgb(235, 218, 218);
 }
 .home .home-content h1{
     font-size: 3rem;
@@ -141,7 +137,7 @@ section {
     line-height:1.3;
 }
 span{
-    color: rgb(77, 21, 77);
+    color:var(--main-color)
 }
 .home-content h3{
     font-size: 3rem;
@@ -174,10 +170,10 @@ span{
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: 0.2rem solid rgb(77, 21, 77);
+    border: 0.2rem solid var(--main-color);
     font-size: 2rem;
     border-radius: 50%;
-    color: rgb(77, 21, 77);
+    color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
 }
@@ -291,9 +287,11 @@ span{
 }
 .skills .heading{
     color: #161616;
-    font-size: 20px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-.skills .container{
+/* .skills .container{
     background: #aa96c4;
     color: var(--text-color);
     border-radius: 1rem;
@@ -301,7 +299,7 @@ span{
     width: 70%;
     margin: auto;
     margin-top: 2rem;
-}
+} */
 .skills .container .row{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -310,28 +308,31 @@ span{
     text-align: center;
 }
 .skills .container .bar{
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
     border-radius: 1rem;
     transition: 0.3s ease;
     cursor: pointer;
 }
-.skills .container .bar:hover{
-    box-shadow: 0 4px 10px var(--main-color); 
-    transform: scale(1.03);
+.skills  img:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease;
 }
 .skills .container .bar.info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
 }
-.skills .container .bar .info span{
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-left: 0.5rem;
+.skills .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 5rem;
     font-family: "Poppins", sans-serif;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
 }
 .info img{
     width: 100px;
@@ -357,23 +358,19 @@ span{
     background-color: var(--second-bg-color);
     padding: 5rem 0 1rem;
 }
-.projects {
-    max-width: 968px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+.projects .heading h2{
+    color:var(--main-color);
+    font-size: 20px;
 }
-.steps__bg{
-    background-color: var(--first-color); 
-    padding: 3rem 2rem 2rem;
-    border-radius: 1rem;
- }
+
 
 .education{
     background:#aa96c4;
 }
 .education .heading{
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 .education .timeline{
     position: relative;
@@ -506,10 +503,13 @@ span{
 }
 
 
-.contact h2{
-    margin-bottom: 3rem;
+.contact .heading{
+    
     color: var(--main-color);
-    font-size: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    
 }
 .contact form{
     max-width: 70rem;
