@@ -80,12 +80,31 @@ html::-webkit-scrollbar-thumb{
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
+/* .menu-icon{
+    font-size: 3rem;
+    color: var(--main-color); */
+    /* display: none; */
+/* } */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
+.sidebar a{
+    width: 100%;
+}
 @media (max-width:995px) {
     #menu-icon{
         display: block;
@@ -361,6 +380,8 @@ span{
     text-align: center;
     font-family: 'Roboto Mono';
     padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .projects .heading{
@@ -374,9 +395,9 @@ span{
     font-size: 2.2em;
     padding-top: 50px;
   }
-.back a:hover{
+/* .back a:hover{
     color: #7b4bb7;
-}
+} */
 
   
   .flip {
@@ -456,9 +477,37 @@ span{
       }
   }
   
-  .text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+  @media (max-width: 768px) {
+    .flip {
+      width: 100%; /* Set width to 100% on smaller screens */
+      max-width: none; /* Remove maximum width */
+    }
+  
+    /* Reset transform for front side */
+    .flip > .front {
+      transform: none;
+    }
+  
+    /* Ensure back side is initially flipped */
+    .flip > .back {
+      transform: rotateY(180deg);
+    }
+  
+    /* Flip animation on hover */
+    .flip:hover > .front {
+      transform: rotateY(-180deg);
+    }
+  
+    .flip:hover > .back {
+      transform: rotateY(0deg);
+    }
   }
+  
+  
+  /* .text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+  } */
+
 
 
 

@@ -17,14 +17,30 @@
     <header class="header">
       <a href="#" class="logo">Hannan</a>
 
-      <i class="fa-solid fa-bars" class="menu-icon"></i>
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href=""><i class="fa-solid fa-xmark"></i></a>
+          </li>
+          <a href="#home" class="active">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#myjourney">My Journey</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href=""><i class="fa-regular fa-user"></i></a>
+        </ul>
+        
+        <!-- <ul>
+          <a href="#home" class="active">Home</a>
         <a href="#skills">Skills</a>
         <a href="#myjourney">My Journey</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a href=""><i class="fa-regular fa-user"></i></a>
+        <li onclick="showSidebar()">
+          <a href=""><i class="fa-solid fa-bars" class="menu-icon"></i> </a>
+        </li>
+        </ul> -->
       </nav>
     </header>
 
@@ -33,15 +49,31 @@
         <img src="/assets/img.jpg" alt="" />
       </div>
       <div class="home-content">
-        <h1>Hi, It's <span>Hannan</span></h1> <br/>
+        <h1>Hi, It's <span>Hannan</span></h1>
+        <br />
         <!-- <h3 class="typing-text">I'm a</h3> -->
         <p>
-          A certified web developer skilled in crafting websites and internal frameworks using React, MongoDB, and JavaScript.</p> <br/>
-          <p> I am dedicated to constant learning and innovation in web development, striving to create impactful, user-friendly interfaces and scalable systems. With hands-on experience and a drive to exceed expectations, I am committed to delivering top-notch solutions and driving innovation in every project.</p>
+          A certified web developer skilled in crafting websites and internal
+          frameworks using React, MongoDB, and JavaScript.
+        </p>
+        <br />
+        <p>
+          I am dedicated to constant learning and innovation in web development,
+          striving to create impactful, user-friendly interfaces and scalable
+          systems. With hands-on experience and a drive to exceed expectations,
+          I am committed to delivering top-notch solutions and driving
+          innovation in every project.
+        </p>
 
         <div class="social-icon">
-          <a href="https://www.linkedin.com/in/hannan-abdul-aziz-7b6b802b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Hannan-Laaraba" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/hannan-abdul-aziz-7b6b802b4/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Hannan-Laaraba" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
 
         <a href="#contact" class="btn">Hire Me</a>
@@ -49,12 +81,14 @@
     </section>
 
     <section class="skills" id="skills">
-      <h2 class="heading">Skills <i class="fa-solid fa-screwdriver-wrench"></i></h2>
+      <h2 class="heading">
+        Skills <i class="fa-solid fa-screwdriver-wrench"></i>
+      </h2>
       <div class="container">
         <div class="row" id="skillsContainer">
           <div class="bar animate_animated animate_zoomIn animate_delay-2s">
             <div class="info">
-              <img src="./assets/html-5.png" /> 
+              <img src="./assets/html-5.png" />
               <!-- <br/><span>HTML</span> -->
             </div>
           </div>
@@ -116,43 +150,63 @@
       </div>
     </section>
 
-    <section class="projects">
-      <h2 class="heading"> My Projects <i class="fa-solid fa-diagram-project"></i></h2>
+    <section class="projects" id="projects">
+      <h2 class="heading">
+        My Projects <i class="fa-solid fa-diagram-project"></i>
+      </h2>
       <div class="flip">
-        <div class="front" style="background-image: url('assets/AgroMart.png')">
-        </div>
+        <div
+          class="front"
+          style="background-image: url('assets/AgroMart.png')"
+        ></div>
         <div class="back">
-           <h1>AgroMart</h1>
-           <p>A digital market place to buy and sell all agro products and produce</p>
-            <a href="https://onyx-agro-mart-eta.vercel.app/products">Live Preview<i class="fa-solid fa-link "></i></a>
-          </div>
-    </div>
-    <div class="flip">
-        <div class="front" style="background-image: url('assets/MediKonect.png')">
+          <h1>AgroMart</h1>
+          <p>
+            A digital market place to buy and sell all agro products and produce
+          </p>
+          <a href="https://onyx-agro-mart-eta.vercel.app/products"
+            >Live Preview<i class="fa-solid fa-link"></i
+          ></a>
         </div>
+      </div>
+      <div class="flip">
+        <div
+          class="front"
+          style="background-image: url('assets/MediKonect.png')"
+        ></div>
         <div class="back">
-           <h1>MediKonect</h1>
-           <p>A medical consultation app that allows users to book consultation with health professionals.</p>
-           <a href="https://medikonect.vercel.app/">Live Preview<i class="fa-solid fa-link "></i></a>
-
-          </div>
-    </div>
-    <div class="flip">
-        <div class="front" style="background-image: url('assets/WayWander.png')">
+          <h1>MediKonect</h1>
+          <p>
+            A medical consultation app that allows users to book consultation
+            with health professionals.
+          </p>
+          <a href="https://medikonect.vercel.app/"
+            >Live Preview<i class="fa-solid fa-link"></i
+          ></a>
         </div>
+      </div>
+      <div class="flip">
+        <div
+          class="front"
+          style="background-image: url('assets/WayWander.png')"
+        ></div>
         <div class="back">
-           <h1>WayWander</h1>
-           <p>A travel blog to share experiences, stories, photos, and tips related to travel</p>
-           <a href="https://waywander-app.vercel.app/">Live Preview<i class="fa-solid fa-link "></i></a>
-
-          </div>
-    </div>
-    
+          <h1>WayWander</h1>
+          <p>
+            A travel blog to share experiences, stories, photos, and tips
+            related to travel
+          </p>
+          <a href="https://waywander-app.vercel.app/"
+            >Live Preview<i class="fa-solid fa-link"></i
+          ></a>
+        </div>
+      </div>
     </section>
-    
 
-    <section class="education" id="education">
-      <h2 class="heading">My <span>Journey</span> <i class="fa-solid fa-graduation-cap"></i></h2>
+    <section class="education" id="myjourney">
+      <h2 class="heading">
+        My <span>Journey</span> <i class="fa-solid fa-graduation-cap"></i>
+      </h2>
       <div class="timeline">
         <div class="container left">
           <div class="content">
@@ -224,10 +278,14 @@
       <h2 class="heading">Contact Me <i class="fa-solid fa-phone"></i></h2>
       <form action="https://formspree.io/f/mgegpwga" method="POST">
         <div class="input-box">
-          <textarea name="name" placeholder="Name" required ></textarea>
-          <textarea name="email" placeholder="Email" required ></textarea>
-          <textarea name="number" placeholder="Phone Number" required ></textarea>
-          <textarea name="text" placeholder="Subject" required ></textarea>
+          <textarea name="name" placeholder="Name" required></textarea>
+          <textarea name="email" placeholder="Email" required></textarea>
+          <textarea
+            name="number"
+            placeholder="Phone Number"
+            required
+          ></textarea>
+          <textarea name="text" placeholder="Subject" required></textarea>
         </div>
         <textarea
           name=""
@@ -242,19 +300,32 @@
 
     <footer class="footer">
       <div class="social">
-        <a href="https://www.linkedin.com/in/hannan-abdul-aziz-7b6b802b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Hannan-Laaraba" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a
+          href="https://www.linkedin.com/in/hannan-abdul-aziz-7b6b802b4/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Hannan-Laaraba" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
       <ul class="list">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#projects" class="active">Projects</a></li>
         <li><a href="#contact" class="active">Contact Me</a></li>
       </ul>
-      <p class="copyright">&#169;
-        Hannan | All Right Reserved
-      </p>
+      <p class="copyright">&#169; Hannan | All Right Reserved</p>
     </footer>
 
-    <script src="/script.js"></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
